@@ -13,7 +13,7 @@ export default new Vuex.Store({
 
   },
   mutations: {
-    [ACT_CHANGE_COUNT]: (state, value) => {
+    [MUT_CHANGE_COUNT]: (state, value) => {
       state.count += value;
     },
   },
