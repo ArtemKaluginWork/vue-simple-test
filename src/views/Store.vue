@@ -2,8 +2,8 @@
   <div class="about">
     <h1>STORE</h1>
     <p>{{count}}</p>
-    <button @click="changeCount(1)">+</button>
-    <button @click="changeCount(-1)">-</button>
+    <button id="increment" @click="$store.commit('MUT_CHANGE_COUNT', 1)">+</button>
+    <button id="decrement" @click="changeCount(-1)">-</button>
   </div>
 </template>
 <script>

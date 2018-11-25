@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    App
     <div id="nav">
       <router-link to="/">State</router-link> |
       <router-link to="/about">Store</router-link> |

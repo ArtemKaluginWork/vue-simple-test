@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/State.vue';
+import State from './views/State.vue';
 import Async from './views/Async.vue'
 
 Vue.use(Router);
@@ -10,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: State,
     },
     {
       path: '/async',

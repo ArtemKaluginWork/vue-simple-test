@@ -2,12 +2,14 @@
   <div class="home">
     <h1>STATE</h1>
     <p>{{count}}</p>
-    <button @click="count = count + 1">+</button>
-    <button @click="count = count - 1">-</button>
+    <button id="increment" @click="count = count + 1">+</button>
+    <button id="decrement" @click="count = count - 1">-</button>
+    <props msg="Test"></props>
   </div>
 </template>
 
 <script>
+import Props from '../components/Props.vue';
 
 export default {
   name: 'home',
@@ -16,5 +18,6 @@ export default {
       count: 0,
     };
   },
+  components: { Props },
 };
 </script>

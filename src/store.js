@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-export const ACT_CHANGE_COUNT = 'CHANGE_COUNT';
+export const ACT_CHANGE_COUNT = 'ACT_CHANGE_COUNT';
 
 export const MUT_CHANGE_COUNT = 'MUT_CHANGE_COUNT';
 
@@ -11,6 +11,9 @@ export default new Vuex.Store({
   state: {
     count: 0,
 
+  },
+  getters: {
+    currenCount: state => `Count: ${state.count}`,
   },
   mutations: {
     [MUT_CHANGE_COUNT]: (state, value) => {
